@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backgroundGradient">
+      <div>
+        <h1 class="title">City List</h1>
+      </div>
+      <div class="cityContainer">
+        <div
+          class="card"
+          onclick="window.location.href = 'cityFocus.html?location=Singapore'"
+        >
+          <div class="row">
+            <div class="col">
+              <h2 class="cityName"></h2>
+            </div>
+            <div class="col">
+              <h1 class="temp"></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="class">
+              <p class="details detail-1"></p>
+            </div>
+            <div class="class">
+              <p class="details detail-2"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- plus button-->
+      <div class="plusButton">
+        <button class="addCityButton" onclick="toggleForm()">
+          <p class="plusSign">+</p>
+        </button>
+        <div class="form-popup" id="addCityForm">
+          <form action="/action_page.php" class="form-container">
+            <input id="userInput" type="text" placeholder="Input City name" />
+            <div class="button">
+              <button type="button" onclick="fetchWeatherData()" class="btn">
+                Find
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- Bin to remove card -->
+        <div class="binContainer dropTarget"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

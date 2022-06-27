@@ -1,0 +1,253 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.backgroundGradient {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 411px;
+  height: 823px;
+  left: 1px;
+  top: 0px;
+
+  background: linear-gradient(180deg, #108dc7 0%, #ef8e38 100%);
+  border: 1px solid #000000;
+}
+
+.title {
+  position: absolute;
+  width: 276px;
+  height: 41px;
+  left: 30px;
+  top: 62px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+
+.cityContainer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 89%;
+  margin-top: 45%;
+}
+
+.cityName {
+  position: absolute;
+  width: 153px;
+  height: 43px;
+  left: 5px;
+  top: 9px;
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+
+.temp {
+  position: absolute;
+  width: 68px;
+  height: 48px;
+  left: 288px;
+  top: 3px;
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.detail-1 {
+  position: absolute;
+  height: 24px;
+  left: 5px;
+  top: 98px;
+  margin-top: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.detail-2 {
+  position: absolute;
+  width: 173px;
+  height: 22px;
+  left: 181px;
+  top: 98px;
+  margin-top: 0;
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: rgba(255, 255, 255, 0.63);
+}
+.card {
+  width: 359px;
+  height: 131px;
+  margin: 30px auto;
+
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card:hover {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(140, 138, 138, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: scale(105%);
+  transition: 70ms;
+}
+
+.addCityButton {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  right: 26px;
+  top: calc(50% - 75px / 2 + 312px);
+
+  background: radial-gradient(
+      100% 100% at 0% 0%,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(42px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.addCityButton:hover {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(140, 138, 138, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: scale(105%);
+  transition: 70ms;
+}
+
+.plusSign {
+  position: absolute;
+  width: 75px;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  margin-top: 5px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #d0d0d0;
+}
+
+.form-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.form-popup {
+  display: none;
+  width: 359px;
+  margin: auto;
+}
+.button {
+  text-align: center;
+  margin: 0;
+}
+.btn {
+  padding: 9px 90px;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 5px auto;
+  width: 97%;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: white;
+}
+
+.btn:hover {
+  /* background: linear-gradient(180deg, #108dc770 0%, #ef8e3880 100%);
+  border: 1px solid #108dc770;
+  color: #ffffff90; */
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(140, 138, 138, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+#userInput {
+  padding: 10px 90px;
+  border-radius: 10px;
+  border: solid 1px white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.binContainer {
+  display: block;
+  text-align: center;
+}
+
+.binBox {
+  display: none;
+  color: #d0d0d0;
+  text-align: center;
+  margin: auto;
+}
