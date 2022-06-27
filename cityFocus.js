@@ -1,5 +1,5 @@
 const id = location.search.split("=")[1];
-const fetchCity = `http://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=${id}&days=1&aqi=no&alerts=no`;
+const fetchCity = `https://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=${id}&days=1&aqi=no&alerts=no`;
 fetch(fetchCity)
   .then((response) => response.json())
   .then((data) => {
@@ -43,7 +43,7 @@ fetch(fetchCity)
         <p class="currentDate">${currentDate}</p>
       </div>
       <div class="goBackButton">
-        <svg xmlns="http://www.w3.org/2000/svg" onclick="window.location.href = 'index.html'" class="backSign" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#d0d0d0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M3 21l6.1-6.1M20 10h-6V4M21 3l-6.1 6.1"/></svg>
+        <svg xmlns="https://www.w3.org/2000/svg" onclick="window.location.href = 'index.html'" class="backSign" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#d0d0d0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6M3 21l6.1-6.1M20 10h-6V4M21 3l-6.1 6.1"/></svg>
       </div>
       <div class="conditionBanner">
         <img class="imgCond" src="${imgCond}" alt="">

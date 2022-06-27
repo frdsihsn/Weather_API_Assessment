@@ -1,6 +1,6 @@
 //default card
 fetch(
-  `http://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=Singapore&days=1&aqi=no&alerts=no`
+  `https://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=Singapore&days=1&aqi=no&alerts=no`
 )
   .then((response) => response.json())
   .then((data) => {
@@ -82,7 +82,7 @@ function removeCard(event) {
 //fetch data of city user input
 function fetchWeatherData() {
   const cityInput = document.getElementById("userInput").value;
-  const fetchCity = `http://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=${cityInput}&days=1&aqi=no&alerts=no`;
+  const fetchCity = `https://api.weatherapi.com/v1/forecast.json?key=0ea279206cd24f0cb5222552222306&q=${cityInput}&days=1&aqi=no&alerts=no`;
   const cardLimit = document.querySelectorAll(".cityContainer > div").length;
   if (cardLimit < 3) {
     fetch(fetchCity)
@@ -135,7 +135,7 @@ function displayFromStorage() {
     const binContainer = document.querySelector(".binContainer");
     binContainer.innerHTML = `<svg
             class="binBox"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="https://www.w3.org/2000/svg"
             width="30"
             height="30"
             viewBox="0 0 24 24"
